@@ -1,0 +1,84 @@
+1,Arithmetic operators?
+
+let z="7%2"
+echo $z
+
+o/p:-1
+
+2,Assignment operators?
+
+a=30
+echo $((a*=4))
+
+o/p:-120
+
+3,Increment operators?
+
+a=10
+echo $((a++ + a-- - a-- + ++a * --a))
+
+o/p:-101
+
+4, example on -ne 0r -eq operators?
+
+n=2
+if [[ $n -ne 0 ]]
+then
+    echo "$n is a non-zero num"
+else
+    echo "$n i a zero num"
+fi    
+
+o/p:-2 is a non-zero num
+
+5,Example on < or <= or > or >= ?
+
+n=90
+m=30
+if [[ $n > $m ]]
+then
+    echo "$n is a non-zero num"
+else
+    echo "$n is a zero num"
+fi    
+
+o/p:-90 is a non-zero num
+
+6, Example on == or != or = ?
+
+n="san"
+m="sand"
+if [ $n != $m ]
+then
+    echo "if block"
+else
+    echo "else block"
+fi    
+
+o/p:- if block
+
+7,Example on -n or -z ?
+
+string="ch"
+if [ -z $string ]
+then
+    echo "if block"
+else
+    echo "else block"
+fi    
+    
+o/p:-else block
+
+8, Example on for or untill or while loop?
+
+n=2
+while [ $n -lt 5 ]
+do
+  echo $n
+  n=`expr $n + 1`
+done  
+
+o/p:-
+2
+3
+4
